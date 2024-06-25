@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MultiStyleNode" extends="Scene"> 
+	<children>
+      <MultiStyleLabel
+            id = "multiStyleLabel"
+            translation="[200, 200]"
+            width = "1080"
+            wrap = "true"
+        />
+  </children>
+<!-- BrightScript Portion -->
+<script type="text/brightscript" uri="MultiStyleNode.brs"/>
+<!-- End of BrightScript Portion -->
+</component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="RectangleNode" extends="Scene"> 
+	<children>
+      <Rectangle
+        id = "blueRectangle"
+        width = "500.0"
+        height = "50.0"
+        color = "0xFF0000FF"
+        translation = "[100,100]"
+      />
+      
+  </children>
+<!-- BrightScript Portion -->
+<script type="text/brightscript" uri="RectangleNode.brs"/>
+<!-- End of BrightScript Portion -->
+</component>

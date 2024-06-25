@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="KeyBoardNode" extends="Scene" initialFocus = "fullKeyboard"> 
+	<children>
+      <Keyboard
+        id = "fullKeyboard"
+      />
+      <Button
+        id = "submit"
+        text = "Submit"
+        iconUri = ""
+        showFocusFootprint = "true"
+        minWidth = "0"
+        translation = "[340,320]"
+      />
+      <Label
+        id = "displayLabel"
+        text = ""
+        translation = "[340,420]"
+      />
+    </children>
+<!-- BrightScript Portion -->
+<script type="text/brightscript" uri="KeyBoardNode.brs"/>
+<!-- End of BrightScript Portion -->
+</component>

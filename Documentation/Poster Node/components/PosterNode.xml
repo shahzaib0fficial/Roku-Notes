@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="PosterNode" extends="Scene"> 
+	<children>
+      <Poster
+        id = "naturePoster"
+        width = "1300"
+        height = "720"
+        blendColor = "0xFFFF00"
+      />
+  </children>
+<!-- BrightScript Portion -->
+<script type="text/brightscript" uri="PosterNode.brs"/>
+<!-- End of BrightScript Portion -->
+</component>
