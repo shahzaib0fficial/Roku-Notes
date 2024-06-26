@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="AudioPlayer" extends="Scene"> 
+	<children>
+    <Poster
+      id = "songImage"
+      width = "700"
+      height = "520"
+      translation = "[275,50]"
+    />
+    <Button
+      id = "previous"
+      translation = "[200,600]"
+      showFocusFootprint = "true"
+      iconUri = "pkg:/images/icons/previous.png"
+      focusedIconUri = "pkg:/images/icons/previous.png"
+    />
+    <Button
+      id = "playPause"
+      translation = "[500,600]"
+      showFocusFootprint = "true"
+      />
+    <Button
+      id = "next"
+      translation = "[800,600]"
+      showFocusFootprint = "true"
+      iconUri = "pkg:/images/icons/next.png"
+      focusedIconUri = "pkg:/images/icons/next.png"
+    />
+  </children>
+<!-- BrightScript Portion -->
+<script type="text/brightscript" uri="AudioPlayer.brs"/>
+<!-- End of BrightScript Portion -->
+</component>
