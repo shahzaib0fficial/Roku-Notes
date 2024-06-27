@@ -5,7 +5,7 @@ end sub
 sub ShowScreen(node as Object)
     prev = m.screenStack.peek() ' take screen from screenStack but don't delete it
     if prev <> invalid
-        prev.visible = fasle ' hide current screen if exist
+        prev.visible = false ' hide current screen if exist
     end if
     ' show new Screen
     m.top.AppendChild(node)

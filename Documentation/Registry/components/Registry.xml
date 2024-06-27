@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="Registry" extends="Scene"> 
+	<children>
+      
+  </children>
+<!-- BrightScript Portion -->
+<script type="text/brightscript" uri="Registry.brs"/>
+<!-- End of BrightScript Portion -->
+</component>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="GridScreen" extends="Group" initialFocus = "fireButton">
+    <children>
+        <Button
+            id="fireButton"
+            translation="[200, 230]"
+            text="Fire"
+            iconUri=""
+            focusedIconUri=""
+        />
+
+        <Poster
+            id = "person"
+            uri = "pkg:/images/person.png"
+            width = "100"
+            height = "300"
+            translation = "[100,100]"
+        />
+        <Poster
+            id = "arrow"
+            uri = "pkg:/images/arrow.jpg"
+            width = "150"
+            height = "30"
+            translation = "[200,200]"
+        />
+        <Poster
+            id = "box"
+            uri = "pkg:/images/box.png"
+            width = "200"
+            height = "200"
+            translation = "[1000,130]"
+        />
+
+        <Animation
+            id = "arrowAnimation"
+            duration = "5"
+            easeFunction = "linear"
+        >
+            <!-- control = "stop"  -->
+            <Vector2DFieldInterpolator
+                id = "arrowVector2D"
+                fieldToInterp = "arrow.translation"
+                key = "[0.0,1.0]"
+                keyValue = "[[200,200],[900,200]]"
+            />
+        </Animation>
+
+    </children>
+    <script type="text/brightscript" uri="GridScreen.brs" />
+    
+</component>

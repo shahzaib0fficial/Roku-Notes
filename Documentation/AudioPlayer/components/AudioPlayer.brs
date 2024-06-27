@@ -18,7 +18,15 @@ function init()
     m.previous.observeField("buttonSelected","previousSub")
 
     m.songUrls = ["pkg:/source/songs/messageTune.mp3", "pkg:/source/songs/message.mp3","pkg:/source/songs/backgroundSong.mp3"]
+    
     m.currentIndex = 0
+
+    if (RegRead("indexValue") = invalid)
+        m.indexValue = FormatJson(m.currentIndex)
+        RegWrite("indexValue",m.indexValue)
+    else
+        m.currentIndex = ParseJson(RegRead("indexValue"))
+    end if
 
     playSongs()
 end function
@@ -41,18 +49,25 @@ sub nextSong()
     if m.audio.state = "finished"
         if m.currentIndex < m.songUrls.count()
             m.currentIndex++
+            m.indexValue = FormatJson(m.currentIndex)
+            RegWrite("indexValue",m.indexValue)
             playSongs()
         else
-            print "here"
             m.currentIndex = 0
+            m.indexValue = FormatJson(m.currentIndex)
+            RegWrite("indexValue",m.indexValue)
             playSongs()
         end if
     else if m.audio.state = "stopped"
         if m.currentIndex < m.songUrls.count()
             m.currentIndex++
+            m.indexValue = FormatJson(m.currentIndex)
+            RegWrite("indexValue",m.indexValue)
             playSongs()
         else
             m.currentIndex = 0
+            m.indexValue = FormatJson(m.currentIndex)
+            RegWrite("indexValue",m.indexValue)
             playSongs()
         end if
     end if
@@ -82,8 +97,12 @@ end sub
 sub previousSub()
     if m.currentIndex = 0
         m.currentIndex = m.songUrls.count() -2
+        m.indexValue = FormatJson(m.currentIndex)
+        RegWrite("indexValue",m.indexValue)
     else
         m.currentIndex = m.currentIndex - 2
+        m.indexValue = FormatJson(m.currentIndex)
+        RegWrite("indexValue",m.indexValue)
     end if
     m.playPause.text = "Play"
     m.playPause.iconUri = "pkg:/images/icons/play.png"
@@ -112,3 +131,30 @@ function onKeyEvent(key as String,press as boolean) as boolean
 
     return result
 end function
+
+
+function RegRead(key, section = invalid)
+    if section = invalid section = "Default"
+    sec = CreateObject("roRegistrySection", section)
+    if sec.Exists(key)
+        return sec.Read(key)
+    else
+        m.preferencesExists = false
+        return invalid
+    end if
+    return invalid
+ end function
+ 
+ function RegDelete(key, section = invalid)
+    if section = invalid section = "Default"
+    sec = CreateObject("roRegistrySection", section)
+    sec.Delete(key)
+    sec.Flush()
+ end function
+ 
+ function RegWrite(key, val, section = invalid)
+    if section = invalid section = "Default"
+    sec = CreateObject("roRegistrySection", section)
+    sec.Write(key, val)
+    sec.Flush() 'commit it
+ end function
