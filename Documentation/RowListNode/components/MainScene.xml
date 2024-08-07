@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="MainScene.brs" />
+    <script type="text/brightscript" uri="UILogic/ScreenStackLogic.brs" />
+    <script type="text/brightscript" uri="UILogic/PlayScreenLogic.brs" />
+    <interface>
+        <field id="exitApp" type="bool" alwaysnotify="true" />
+    </interface>
+    <children>
+    
+    </children>
+</component>

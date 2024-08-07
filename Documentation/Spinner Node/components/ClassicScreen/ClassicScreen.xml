@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="ClassicScreen" extends="Group" initialFocus = "optionsRotatorBtn">
+    <script type="text/brightscript" uri="ClassicScreen.brs" />
+    <interface>
+        <field id="goGameScreen" type="bool" alwaysnotify="true" />
+    </interface>
+    <children>
+        <Button
+            id = "optionsRotatorBtn"
+            translation = "[500,300]"
+        />
+
+        <BusySpinner
+            id = "optionSpinner"
+            spinInterval = "2"
+            visible = "false"
+        />
+
+        <BusySpinner
+            id = "optionSelectorSpinner"
+            spinInterval = "1"
+            visible = "false"
+        />
+        <Timer
+            id="rotationControlTimer"
+            repeat="true"
+            duration="0.2"
+        />
+
+        <Timer
+            id="stopRotationTimer"
+            repeat="false"
+            duration="5"
+        />
+
+        <!-- <Poster
+            id = "optionSelector"
+            uri = "pkg:/images/classicImages/optionSelector.png"
+            width = "100"
+            height = "100"
+            translation = "[230,230]"
+        /> -->
+
+        <!-- <Animation
+            id = "optionsAnimation"
+            duration = "1"
+            repeat = "true"
+            easeFunction = "linear"
+        > -->
+            <!-- control = "stop"  -->
+            <!-- <Vector2DFieldInterpolator
+                id = "optionsVector2D"
+                fieldToInterp = "optionSelector.translation"
+                key = "[0.0,1.0]"
+                keyValue = "[[230,230],[230,240]]"
+            /> -->
+        <!-- </Animation> -->
+
+    </children>
+</component>

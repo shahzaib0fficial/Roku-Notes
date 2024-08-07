@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--********** Copyright 2020 Roku Corp.  All Rights Reserved. **********-->
+
+<component name="MainLoaderTask" extends="Task">
+    <interface>
+        <field id="onContentLoaded" type="bool" alwaysnotify ="true"/>
+        <field id="onErrorOccurs" type="bool" alwaysnotify = "true" />
+    </interface>
+
+    <script type="text/brightscript" uri="MainLoaderTask.brs" />
+</component>

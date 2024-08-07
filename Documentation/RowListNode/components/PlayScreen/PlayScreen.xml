@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="PlayScreen" extends="Group" initialFocus = "rowList">
+    <script type="text/brightscript" uri="PlayScreen.brs" />
+    <children>
+    <!-- itemComponentName="RowListItem"
+            id="rowList"
+            translation="[50,230]"
+            numRows="2"
+            rowitemSize="[[350,196]]"
+            rowItemSpacing="[[25,0]]"
+            itemSize="[1280,275]"
+            itemSpacing="[0,0]"
+            rowLabelOffset="[[5,20]]"
+            focusXOffset="[0]"
+            showRowLabel="[true]"
+            showRowCounter="[true]"
+            rowFocusAnimationStyle="floatingfocus"
+            rowCounterRightOffset="[100]" -->
+    <RowList
+        id = "rowList"
+        itemComponentName = "RowListItem"
+        translation = "[100,100]"
+        numRows = "2"
+        rowLabelOffset="[[0,20]]"
+        itemSize = "[1000,340]"
+        rowItemSize = "[ [245,270] ]"
+        itemSpacing = "[0,0]"
+        rowItemSpacing="[[25,0]]"
+        showRowLabel = "true"
+        showRowCounter="[true]"
+        drawFocusFeedback = "true"
+        vertFocusAnimationStyle = "fixedFocusWrap" 
+        rowFocusAnimationStyle = "fixedFocusWrap"
+    />
+       
+    </children>
+</component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="GameScreen" extends="Group" initialFocus = "optionsRotatorBtn">
+    <script type="text/brightscript" uri="GameScreen.brs" />
+    <children> 
+        <MultiStyleLabel
+            id = "question"
+            translation = "[100,100]"
+        />
+
+        <RowList
+            id = "optionsRowList"
+            itemComponentName = "RowListItem"
+            translation = "[515,131]"
+            numRows = "2"
+            rowLabelOffset="[[0,0]]"
+            itemSize = "[1000,64]"
+            rowItemSize = "[ [64,64] ]"
+            itemSpacing = "[0,2]"
+            rowItemSpacing="[[2,0]]"
+            drawFocusFeedback = "true"
+            vertFocusAnimationStyle = "floatingFocus" 
+            rowFocusAnimationStyle = "floatingFocus"
+            focusBitmapUri = "pkg:/images/gameImages/focus.9.png"
+        />
+
+    </children>
+</component>

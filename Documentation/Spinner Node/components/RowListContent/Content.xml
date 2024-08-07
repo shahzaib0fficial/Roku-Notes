@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="Content" extends="ContentNode">
+    <children>
+        <ContentNode title = "Row 1" >
+            <ContentNode
+                HDPosterUrl = "pkg:/images/classicImages/optionBackground.png"
+                title = "A"
+            />
+            <ContentNode
+                HDPosterUrl = "pkg:/images/classicImages/optionBackground.png"
+                title = "B"
+            />
+        </ContentNode>
+        <ContentNode title = "Row 2" >
+            <ContentNode
+                HDPosterUrl = "pkg:/images/classicImages/optionBackground.png"
+                title = "C"
+            />
+            <ContentNode
+                HDPosterUrl = "pkg:/images/classicImages/optionBackground.png"
+                title = "D"
+            />
+        </ContentNode>
+    </children>
+</component>

@@ -33,7 +33,7 @@ end function
 
 sub playSongs()
     m.songContent = CreateObject("RoSGNode","ContentNode")
-    m.audio = CreateObject("roSGNode","Audio")    
+    m.audio = CreateObject("roSGNode","Audio")
 
         m.songContent.url = m.songUrls[m.currentIndex]
         m.songImagePoster.uri = m.songImages[m.currentIndex]

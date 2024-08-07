@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="PlayScreen" extends="Group" initialFocus = "classicBtn">
+    <script type="text/brightscript" uri="PlayScreen.brs" />
+    <interface>
+        <field id="ClassicClicked" type="bool" alwaysnotify ="true" />
+    </interface>
+    <children>
+        <Button
+            id = "classicBtn"
+            text = "Classic"
+        />    
+    </children>
+</component>
