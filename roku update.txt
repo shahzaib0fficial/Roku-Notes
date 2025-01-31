@@ -1,0 +1,6 @@
+To generate an update of roku channel 
+1) update major and build version
+2) load a channel on roku device 
+3) go to browser and open your roku ip
+4) go to utilities and upload last pkg file and enter password and press rekey
+5) go to pakager and write channel name and the same password and click on pakage and you got upper a pkg file download link click and download
